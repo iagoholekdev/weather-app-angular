@@ -56,13 +56,11 @@ body, html {
   overflow: hidden; /* Prevents scrolling on the body */
 }
 
-/* styles.css or your component's style file */
+
 .container {
   width: 100%;
-  height: 100vh; /* Adjust the height as needed */
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px var(--shadow-dark);
-  margin-top: 3rem;
+  height: 100vh; /* Adjust the height as needed or set to a fixed value */
+  background-image: url('/assets/cold2.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -70,6 +68,11 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
+.modal {
+  z-index: 1;
+}
+
 
 /* weather-modal-content.component.scss */
 
