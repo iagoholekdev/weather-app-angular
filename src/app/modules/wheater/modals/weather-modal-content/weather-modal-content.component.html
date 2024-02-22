@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ weatherData.name }}, {{ weatherData.sys.country }}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <!-- Display weather data in the modal -->
+  <p>Temperature: {{ weatherData.main.temp }}°C</p>
+  <p>Weather: {{ weatherData.weather[0].description }}</p>
+  <p>Humidity: {{ weatherData.main.humidity }}%</p>
+  <!-- Add more weather details as needed -->
+  <p>Timezone: {{ weatherData.timezone }}</p>
+  <p>Sunrise: {{ formatTimestamp(weatherData.sys.sunrise) | date:'shortTime' }}</p>
+  <p>Sunset: {{ formatTimestamp(weatherData.sys.sunset) | date:'shortTime' }}</p>
+</div>

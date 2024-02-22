@@ -1,1 +1,7 @@
-<p>weather-home works!</p>
+<div class="container" [ngStyle]="{'background-image': 'url(/assets/cold2.jpg)'}">
+  <div class="search">
+    <input [(ngModel)]="cidadeInicial" placeholder="Enter city name" class="city-input" />
+    <button (click)="getWeatherCity()" class="get-weather-button">Get Weather</button>
+  </div>
+</div>
+
