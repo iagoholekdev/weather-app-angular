@@ -1,0 +1,24 @@
+/* Add these styles to your SCSS file */
+
+.city-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.get-weather-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-weather-button:hover {
+  background-color: rgba(34, 66, 194, 0.8); /* Adjust the alpha (last value) for transparency */
+}
